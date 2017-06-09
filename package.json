@@ -1,0 +1,27 @@
+{
+    "name": "vue-see",
+    "version": "1.0.3",
+    "description": "适用于Vue.js2.0的图片预览插件 / Picture preview plugin for Vue.js2.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhaohaodang/vue-see.git"
+    },
+    "keywords": [
+        "picture-preview",
+        "plugins",
+        "Vuejs"
+    ],
+    "author": "zhaohaodang@gmail.com",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zhaohaodang/vue-see/issues"
+    },
+    "homepage": "https://github.com/zhaohaodang/vue-see#readme",
+    "dependencies": {
+        "photoswipe": "^4.1.2"
+    }
+}
