@@ -2,15 +2,21 @@
 > Picture preview plugin for Vue.js2.0
 
 ##Intro/简介
+
 vue-see is an image preview plugin for vue2.x that looks like a WeChat image preview and relies on Photoswipe implementation.
 vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图片预览，依赖Photoswipe实现。
+
 ##Demo/演示
 [Live Demo](https://zhaohaodang.github.io/demo/vue-see/#/)
+
 ##Install/安装
+
 ```bash
 npm install vue-see
 ```
+
 ##Usage/使用
+
 ```javascript
 <template>
     <div>
@@ -39,7 +45,9 @@ export default {
 }
 </script>
 ```
+
 ##Doc/文档
+
 component/组件
 * see-box：images wrapper required/多个图片的包裹层，必须
 * see-item：image item required/图片列表渲染，必须
