@@ -43,14 +43,14 @@ export default {
 component/组件
 * see-box：images wrapper required/多个图片的包裹层，必须
 * see-item：image item required/图片列表渲染，必须
-| 属性        | 描述   |  是否必须  |
-| --------   | -----:  | :----:  |
-| imgList     | 图片列表数组 |   true     |
-|u			 |	图片url		|	true	|
-| key        |   vue推荐使用的列表key   |   false   |
-| h        |    图片高度，默认100像素    |  false  |
-| w        |    图片宽度，默认100像素    |  false  |
-| c        |    图片描述，默认空    |  false  |
+property/属性
+* imgList：Image list array, required/图片列表数组，必需
+* u：Image url,required/图片url，必需
+* key：recommended list key,not required/推荐使用的列表key，非必需
+* h：Image height, default 100 pixels,not required/图片高度，默认100像素，非必需
+* w：Image width, default 100 pixels,not required/图片宽度，默认100像素，非必需
+* c：Image description, default '',not required/图片描述，默认空，非必需
+
 
 ## Other/其他
 
