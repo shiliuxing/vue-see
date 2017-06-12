@@ -57,5 +57,6 @@ property/属性
 
 ## Other/其他
 
+* [基于Vue2.0高仿微信App的单页应用](https://github.com/zhaohaodang/vue-WeChat)
 
 
