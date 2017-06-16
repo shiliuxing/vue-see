@@ -15,7 +15,7 @@ npm install vue-see
 <template>
     <div>
         <see-box>
-            <see-item v-for="(item,index) in imgList" :key="index" :u="item.src" :h="item.h" :w="item.w" :c="item.c"></see-item>
+            <see-item v-for="(item,index) in imgList" :key="index" :img="item"></see-item>
         </see-box>
     </div>
 </template>
@@ -24,12 +24,12 @@ export default {
     data() {
         return {
             imgList: [{
-                src: 'http://blogfile.ifeng.com/uploadfiles/blog_attachment/1308/75/10103075_13773099904967.jpg',
+                u: 'http://blogfile.ifeng.com/uploadfiles/blog_attachment/1308/75/10103075_13773099904967.jpg',
                 w: 500,
                 h: 365,
                 c:'img1'
             }, {
-                src: 'http://img.mp.itc.cn/upload/20170526/c6ae4bb96b3043be9d45fa5402a7f96c_th.jpg',
+                u: 'http://img.mp.itc.cn/upload/20170526/c6ae4bb96b3043be9d45fa5402a7f96c_th.jpg',
                 w: 600,
                 h: 336,
                 c:'img2'
@@ -47,12 +47,20 @@ component/组件
 
 property/属性
 
-* imgList：Image list array, required/图片列表数组，必需
-* u：Image url,required/图片url，必需
-* key：recommended list key,not required/推荐使用的列表key，非必需
-* h：Image height, default 100 pixels,not required/图片高度，默认100像素，非必需
-* w：Image width, default 100 pixels,not required/图片宽度，默认100像素，非必需
-* c：Image description, default '',not required/图片描述，默认空，非必需
+* see-item 组件属性
+
+  * imgList：Image list array, required/图片列表数组，必需
+
+
+  * :img：image information, object, required/图片信息数组，必需，标识符不可修改
+  * :key：recommended list key,not required/推荐使用的列表key，非必需
+
+* imgList 数据信息(unchangeable  key name/键名不可修改)
+
+  * u：Image url,required/图片url，必需
+  * w：Image width, default 100 pixels,not required /图片宽度，默认100像素，非必需
+  * h：Image height, default 100 pixels,not required/图片高度，默认100像素，非必需
+  * c：Image description, default '',not required/图片描述，默认空，非必需
 
 
 ## Other/其他

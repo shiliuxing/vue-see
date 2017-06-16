@@ -8,11 +8,11 @@ seePlugin.install = function(Vue, options) {
         template: '<div><div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery"><slot></slot></div><div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"><div class="pswp__bg"></div><div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div><div class="pswp__item"></div><div class="pswp__item"></div></div><div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button><button class="pswp__button pswp__button--share" title="Share"></button><button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button><button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button><button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div></div>'
     })
     Vue.component('see-item', {
-        props: ['u', 'h', 'c', 'w'],
-        template: '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a :href="u" itemprop="contentUrl" :data-size="s"><img :src="u" itemprop="thumbnail" :alt="c" /></a><figcaption itemprop="caption description">{{c}}</figcaption></figure>',
+        props: ['img'],
+        template: '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a :href="img.u" itemprop="contentUrl" :data-size="s"><img :src="img.u" itemprop="thumbnail" :alt="img.c" /></a><figcaption itemprop="caption description">{{img.c}}</figcaption></figure>',
         computed: {
             s: function() {
-                return (this.w ? this.w : 100) + 'x' + (this.h ? this.h : 100)
+                return (this.img.w ? this.img.w : 100) + 'x' + (this.img.h ? this.img.h : 100)
             }
         },
         mounted: function() {
