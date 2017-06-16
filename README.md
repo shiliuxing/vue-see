@@ -61,7 +61,7 @@ property/属性
   * w：Image width, default 100 pixels,not required /图片宽度，默认100像素，非必需
   * h：Image height, default 100 pixels,not required/图片高度，默认100像素，非必需
   * c：Image description, default '',not required/图片描述，默认空，非必需
-
+> 建议正确设置图片宽高，已获得
 
 ## Other/其他
 
