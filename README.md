@@ -52,7 +52,7 @@ property/属性
   * imgList：Image list array, required/图片列表数组，必需
 
 
-  * :img：image information, object, required/图片信息数组，必需，标识符不可修改
+  * :img：image information, object, required/图片信息对象，必需，标识符不可修改
   * :key：recommended list key,not required/推荐使用的列表key，非必需
 
 * img 对象属性(unchangeable  key name/键名不可修改)
