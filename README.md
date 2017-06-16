@@ -55,7 +55,7 @@ property/属性
   * :img：image information, object, required/图片信息数组，必需，标识符不可修改
   * :key：recommended list key,not required/推荐使用的列表key，非必需
 
-* imgList 数据信息(unchangeable  key name/键名不可修改)
+* img 对象属性(unchangeable  key name/键名不可修改)
 
   * u：Image url,required/图片url，必需
   * w：Image width, default 100 pixels,not required /图片宽度，默认100像素，非必需
