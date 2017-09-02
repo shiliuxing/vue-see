@@ -9,6 +9,17 @@ vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图�
 ## Demo/演示
 [Live Demo](https://zhaohaodang.github.io/demo/vue-see/#/)
 ## Install/安装
+
+⚠️ 插件中使用了ES6的语法，可能需要如下配置`babel-loader`
+
+```javascript
+{
+    test: /\.js$/,
+    loader: 'babel-loader',
+    include: [resolve('src'), resolve('test')]
+}
+```
+
 ```bash
 npm install vue-see
 ```
