@@ -3,6 +3,7 @@
 
 ## 简介
 vue-see is an image preview plugin for vue2.x that looks like a WeChat image preview and relies on Photoswipe implementation.
+
 vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图片预览，依赖Photoswipe实现。
 ## 更新
 - 20170720 [支持自定义PhotoSwipe参数](https://github.com/zhaohaodang/vue-see/releases/tag/1.2.0)
