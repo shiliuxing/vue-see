@@ -37,7 +37,7 @@ demo.vue
 <template>
     <div>
         <see-box>
-            <see-item v-for="(item,index) in imgList" :key="index" :img="item"></see-item>
+            <see-item v-for="(item,index) in imgList" :key="index" :url="item.u" :width="item.w" :height="item.h" :caption="item.c"></see-item>
         </see-box>
     </div>
 </template>
@@ -65,23 +65,24 @@ export default {
 component/组件
 
 * see-box：images wrapper required/多个图片的包裹层，必须
+
 * see-item：image item required/图片列表渲染，必须
 
-property/属性
+API
 
-* see-item 组件属性
-
-  * imgList：Image list array, required/图片列表数组，必需
-  * :img：image information, object, required/图片信息对象，必需，标识符不可修改
-  * :key：recommended list key,not required/推荐使用的列表key，非必需
-
-* img 对象属性(unchangeable  key name/键名不可修改)
-
-  * u：Image url,required/图片url，必需
-  * w：Image width, default 100 pixels,not required /图片宽度，默认100像素，非必需
-  * h：Image height, default 100 pixels,not required/图片高度，默认100像素，非必需
-  * c：Image description, default '',not required/图片描述，默认空，非必需
-> 建议正确设置图片宽高，达到最佳效果
+* imgList：Image list array, required/图片列表数组，可以是服务器端返回的数据，必需
+  
+* key：recommended list key,not required/推荐使用的列表key，非必需
+  
+* url：Image url,required/图片url，string类型，必需
+  
+* width：Image width, default 100 pixels,not required /图片宽度，number类型，默认300像素，非必需
+  
+* height：Image height, default 100 pixels,not required/图片高度，number类型，默认300像素，非必需
+  
+* caption：Image description, default '',not required/图片描述，string类型，默认空，非必需
+  
+> 建议正确设置图片宽高，达到图片的最佳预览效果
 
 ## Other/其他
 
