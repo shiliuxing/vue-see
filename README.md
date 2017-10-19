@@ -1,14 +1,14 @@
 # vue-see
 > Picture preview plugin for Vue.js2.0
 
-## Intro/简介
+## 简介
 vue-see is an image preview plugin for vue2.x that looks like a WeChat image preview and relies on Photoswipe implementation.
 vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图片预览，依赖Photoswipe实现。
-## Update/更新
+## 更新
 - 20170720 [支持自定义PhotoSwipe参数](https://github.com/zhaohaodang/vue-see/releases/tag/1.2.0)
 ## Demo/演示
 [Live Demo](https://zhaohaodang.github.io/demo/vue-see/#/)
-## Install/安装
+## 安装
 
 ⚠️ 插件中使用了ES6的语法，可能需要如下配置`babel-loader`
 
@@ -23,7 +23,7 @@ vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图�
 ```bash
 npm install vue-see
 ```
-## Usage/使用
+## 使用
 main.js
 ```javascript
 import VueSee from 'vue-see'
@@ -61,26 +61,26 @@ export default {
 }
 </script>
 ```
-## Doc/文档
-component/组件
+## 文档
+组件
 
-* see-box：images wrapper required/多个图片的包裹层，必须
+* see-box：多个图片的包裹层，必须
 
-* see-item：image item required/图片列表渲染，必须
+* see-item：图片列表渲染，必须
 
 API
 
-* imgList：Image list array, required/图片列表数组，可以是服务器端返回的数据，必需
+* imgList：图片列表数组，可以是服务器端返回的数据，必需
   
-* key：recommended list key,not required/推荐使用的列表key，非必需
+* key：推荐使用的列表key，非必需
   
-* url：Image url,required/图片url，string类型，必需
+* url：图片url，string类型，必需
   
-* width：Image width, default 100 pixels,not required /图片宽度，number类型，默认300像素，非必需
+* width：图片宽度，number类型，默认300像素，非必需
   
-* height：Image height, default 100 pixels,not required/图片高度，number类型，默认300像素，非必需
+* height：图片高度，number类型，默认300像素，非必需
   
-* caption：Image description, default '',not required/图片描述，string类型，默认空，非必需
+* caption：图片描述，string类型，默认空，非必需
   
 > 建议正确设置图片宽高，达到图片的最佳预览效果
 
