@@ -36,30 +36,41 @@ Vue.use(VueSee,options)
 demo.vue
 ```html
 <template>
+  <div class="hello">
+    <h3>点击图片预览</h3>
     <div>
-        <see-box>
-            <see-item v-for="(item,index) in imgList" :key="index" :url="item.u" :width="item.w" :height="item.h" :caption="item.c"></see-item>
-        </see-box>
+      <see-box>
+        <see-item v-for="(item,index) in imgList" :key="index" :url="item.u" :width="item.w" :height="item.h" :caption="item.c"></see-item>
+      </see-box>
     </div>
+  </div>
 </template>
+
 <script>
-export default {
+  export default {
+    name: 'hello',
     data() {
-        return {
-            imgList: [{
-                u: 'http://blogfile.ifeng.com/uploadfiles/blog_attachment/1308/75/10103075_13773099904967.jpg',
-                w: 500,
-                h: 365,
-                c:'img1'
-            }, {
-                u: 'http://img.mp.itc.cn/upload/20170526/c6ae4bb96b3043be9d45fa5402a7f96c_th.jpg',
-                w: 600,
-                h: 336,
-                c:'img2'
-            }]
-        }
+      return {
+        imgList: [{
+          u: 'https://sinacloud.net/vue-see/preview01.jpg',
+          w: 520,
+          h: 390,
+          c: 'img1'
+        }, {
+          u: 'https://sinacloud.net/vue-see/preview02.jpg',
+          w: 440,
+          h: 408,
+          c: 'img2'
+        },
+        {
+          u: 'https://sinacloud.net/vue-see/preview03.jpeg',
+          w: 500,
+          h: 333,
+          c: 'img3'
+        }]
+      }
     }
-}
+  }
 </script>
 ```
 ## 文档
