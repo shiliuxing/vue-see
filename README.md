@@ -22,7 +22,7 @@ vue-see是一个适用于Vue2.x的图片预览插件，效果类似微信的图�
 ```
 
 ```bash
-npm install vue-see
+npm install vue-see -S
 ```
 ## 使用
 main.js
