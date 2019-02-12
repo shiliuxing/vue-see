@@ -96,7 +96,7 @@ API
   
 > 建议正确设置图片宽高，达到图片的最佳预览效果
 
-## Other/其他
+## 其他
 
 * [基于Vue2.0高仿微信App的单页应用](https://github.com/zhaohaodang/vue-WeChat)
 
